@@ -6,7 +6,7 @@ import time
 
 import board
 
-from fs3000 import FS300_1015
+from fs3000 import FS3000_1015
 
 i2c = board.I2C()  # uses board.SCL and board.SDA
 
