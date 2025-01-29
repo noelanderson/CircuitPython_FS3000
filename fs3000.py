@@ -24,7 +24,7 @@ Implementation Notes
   https://circuitpython.org/downloads
 
 
-# * Adafruit's Bus Device library: https://github.com/adafruit/Adafruit_CircuitPython_BusDevice
+* Adafruit's Bus Device library: https://github.com/adafruit/Adafruit_CircuitPython_BusDevice
 
 
 """
