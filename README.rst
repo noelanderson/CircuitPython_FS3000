@@ -24,6 +24,8 @@ Introduction
 
 CircuitPython driver library for Renesas FS3000 Air Velocity Sensor Module
 
+Reads airflow in m/s
+
 
 Dependencies
 =============
@@ -108,10 +110,14 @@ Usage Example
 
 Documentation
 =============
-API documentation for this library can be found on `Read the Docs <https://circuitpython-fs3000.readthedocs.io/>`_.
 
-For information on building library documentation, please check out
-`this guide <https://learn.adafruit.com/creating-and-sharing-a-circuitpython-library/sharing-our-docs-on-readthedocs#sphinx-5-1>`_.
+Class Diagram for library
+
+.. figure:: https://raw.githubusercontent.com/noelanderson/CircuitPython_FS3000/refs/heads/main/uml/fs3000.svg
+   :alt: Class Diagram
+
+
+API documentation for this library can be found on `Read the Docs <https://circuitpython-fs3000.readthedocs.io/>`_.
 
 Contributing
 ============
