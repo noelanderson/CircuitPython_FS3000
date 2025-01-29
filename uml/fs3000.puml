@@ -1,0 +1,22 @@
+' SPDX-FileCopyrightText: Copyright (c) 2025 Noel Anderson
+' SPDX-License-Identifier: MIT
+
+@startuml FS3000
+class FS3000 {
+    +{method} __init__(i2c: I2C)
+    +{method} airflow(): float
+}
+
+class FS3000_1005 {
+    +{method} __init__(i2c: I2C)
+}
+
+class FS3000_1015 {
+    +{method} __init__(i2c: I2C)
+}
+
+FS3000 <|-- FS3000_1005
+FS3000 <|-- FS3000_1015
+
+hide empty members
+@enduml
