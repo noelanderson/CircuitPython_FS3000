@@ -38,12 +38,6 @@ This is easily achieved by downloading
 or individual libraries can be installed using
 `circup <https://github.com/adafruit/circup>`_.
 
-Installing from PyPI
-=====================
-.. note:: This library is not available on PyPI yet. Install documentation is included
-   as a standard element. Stay tuned for PyPI availability!
-
-.. todo:: Remove the above note if PyPI version is/will be available at time of release.
 
 On supported GNU/Linux systems like the Raspberry Pi, you can install the driver locally `from
 PyPI <https://pypi.org/project/circuitpython-fs3000/>`_.
@@ -94,8 +88,23 @@ Or the following command to update an existing version:
 Usage Example
 =============
 
-.. todo:: Add a quick, simple example. It and other examples should live in the
-examples folder and be included in docs/examples.rst.
+.. code-block:: python
+
+    import time
+    import board
+
+    from fs3000 import FS300_1015
+
+    i2c = board.I2C()  # uses board.SCL and board.SDA
+
+    # Example usage
+    sensor = FS3000_1015(i2c)
+
+
+    while True:
+        print(f"Airflow: {sensor.airflow()} m/s")
+        time.sleep(2)
+
 
 Documentation
 =============
